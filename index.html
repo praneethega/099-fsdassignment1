@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>LinkShare-Share Files via Link</title>
+    <link rel="shortcut icon" type="image/png" href="title.png">
+</head>
+<body>
+    <img src="logo.png" alt="linkshare logo" class="logo9533">
+    <section class="main-upload">
+        <div class="drop-space">
+            <div class="icon-space">
+                <img src="file1.png" alt="fileimage" class="first" draggable="false">
+                <img src="files.png" alt="files" class="second" draggable="false">
+            </div>
+            <input type="file" id="fileinput">
+        <div class="title"> Drag your Files here or,<span class="browseBtn">browse</span></div>
+        </div>
+        <div class="progress-container">
+            <div class="bg-progress"></div>
+            <div class="inner-container">
+                <div class="title">Uploading...</div>
+                <div class="percent-container"><span id="percent">0</span>%</div>
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+        <div class="sharing-container">
+            <p class="expire">Link expires in 36 hours</p>
+            <div class="input-container">
+                <input type="text" id="fileURL" readonly> 
+                <img src="./copy-icon.svg" alt="copy-icon" id="copyBtn">
+            </div>
+            <p>Or try email</p>
+            <div class="email-container">
+                <form id="emailForm">
+                    <div class="field">
+                        <label for="sender">Your Email</label>
+                        <input type="email" required name ="from-email" id="sender">
+                    </div>
+                    <div class="field">
+                        <label for="receiver">Reciever's Email</label>
+                        <input type="email" required name="to-email" id="receiver">
+                    </div>
+                    <button type="submit">send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="toast"></div>
+    <script src="index.js"></script>
+</body>
+</html>
